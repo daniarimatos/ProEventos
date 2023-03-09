@@ -457,3 +457,7 @@ $RECYCLE.BIN/
 *.db
 *.db-shm
 *.db-wal
+
+#Excluindo arquivos angular
+*.pack_
+*.pack
