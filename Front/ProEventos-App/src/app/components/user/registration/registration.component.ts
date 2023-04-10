@@ -32,7 +32,7 @@ export class RegistrationComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       userName: ['', Validators.required],
       senha: ['', [Validators.required,Validators.minLength(6)]],
-      confimeSenha: ['', Validators.required],
+      confirmeSenha: ['', Validators.required],
     }, formOptions);
   }
 }

@@ -5,9 +5,9 @@ export class ValidatorField {
     return(group: AbstractControl) => {
       const formGroup = group as FormGroup;
       const control = formGroup.controls[controlName];
-      const matchingControl = formGroup.controls[matchingControlName];
+      const matchingControl: any = formGroup.controls[matchingControlName];
 
-      if(matchingControl.errors && !matchingControl.errors["mustMatch"]){
+      if(matchingControl.errors && !matchingControl.errors.mustMatch){
         return null;
       }
 
